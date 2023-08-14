@@ -14,6 +14,8 @@ public class UnitTest1 : PageTest
     {
         await Page.GotoAsync("https://playwright.dev");
 
+        await Page.SetViewportSizeAsync(1920, 1080);
+
         // Expect a title "to contain" a substring.
         await Expect(Page).ToHaveTitleAsync(new Regex("Playwright"));
 
