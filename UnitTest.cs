@@ -7,7 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace PlaywrightTests;
 
 [TestClass]
-public class UnitTest1 : PageTest
+public class UnitTest : PageTest
 {
     [TestMethod]
     public async Task HomepageHasPlaywrightInTitleAndGetStartedLinkLinkingtoTheIntroPage()
@@ -30,5 +30,26 @@ public class UnitTest1 : PageTest
 
         // Expects the URL to contain intro.
         await Expect(Page).ToHaveURLAsync(new Regex(".*intro"));
+    }
+
+    [TestMethod]
+    public async Task TestWithCustomContextOptions()
+    {
+        // The following Page (and BrowserContext) instance has the custom colorScheme, viewport and baseURL set:
+        await Page.GotoAsync("/login");
+    }
+
+    public override BrowserNewContextOptions ContextOptions()
+    {
+        return new BrowserNewContextOptions()
+        {
+            ColorScheme = ColorScheme.Light,
+            ViewportSize = new()
+            {
+                Width = 1920,
+                Height = 1080
+            },
+            BaseURL = "https://github.com",
+        };
     }
 }
