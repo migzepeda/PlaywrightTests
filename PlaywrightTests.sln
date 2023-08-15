@@ -5,8 +5,6 @@ VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlaywrightTests", "PlaywrightTests.csproj", "{7E37ECC5-DF75-4E84-8147-0952C3A76CC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaywrightSpecFlowPOM", "..\SpecFlowProject1\PlaywrightSpecFlowPOM.csproj", "{CBB57A12-A5D4-4F9F-9881-34D97DA644E0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{7E37ECC5-DF75-4E84-8147-0952C3A76CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E37ECC5-DF75-4E84-8147-0952C3A76CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E37ECC5-DF75-4E84-8147-0952C3A76CC1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CBB57A12-A5D4-4F9F-9881-34D97DA644E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CBB57A12-A5D4-4F9F-9881-34D97DA644E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CBB57A12-A5D4-4F9F-9881-34D97DA644E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CBB57A12-A5D4-4F9F-9881-34D97DA644E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
